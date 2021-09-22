@@ -1,0 +1,20 @@
+<h2>Book detail</h2>
+<table>
+  <thead>
+    <tr>
+      <td></td>
+      <td style="text-align: center;">Title</td>
+      <td style="text-align: center;">Opinion</td>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %><br>
+          <%= @book.user.username %>
+        </td>
+        <td><%= @book.title %></td>
+        <td><%= @book.body %></td>
+      </tr>
+  </tbody>
+</table>

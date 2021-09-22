@@ -1,0 +1,28 @@
+<p>
+  <%= notice %>
+</p>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="top-text">
+      <h1>welcome to
+        <span class="fas fa-book" aria-hidden="true">Bookers!!</span>
+      </h1>
+      <p>In
+        <span class="fas fa-book" aria-hidden="true">Bookers,</span><br>
+        you can share and exchange your opinions, inpressions, and emotions<br>
+        about various books!
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <button class="btn btn-primary w-50 mt-2 btn-info">
+      <%= link_to "Log in", new_user_session_path, class:"text-white" %>
+    </button>
+  </div>
+  <div class="row justify-content-center">
+    <button class="btn btn-primary w-50 mt-2 btn-success">
+      <%= link_to "Sign Up", new_user_registration_path, class:"text-white" %>
+    </button>
+  </div>
+</div>
