@@ -18,7 +18,7 @@
       <table>
         <tr>
           <td>
-            <%= attachment_image_tag @user, :profile_image, 'jpeg', fallback: "no_image.jpg", size: "50x50" %><br>
+            <%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg", size: "50x50" %><br>
             <%= link_to @user.name, user_path(@user) %>
           </td>
           <td><%= @book.title %></td>
