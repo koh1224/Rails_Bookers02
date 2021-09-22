@@ -8,7 +8,7 @@
   <tbody>
     <tr>
       <th>name</th>
-      <th><%= @user.username %></th>
+      <th><%= @user.name %></th>
     </tr>
     <tr>
       <th>introduction</th>
@@ -19,10 +19,8 @@
   </tbody>
 </table>
 
-<% if @user.id == current_user.id %>
   <div class="mb-4 mt-5">
     <%= link_to edit_user_path(@user), class:"btn btn-outline-secondary w-75" do %>
-      <span class="fas fa-users-cog" aria-hidden="true"></span>
+      <span class="fas fa-user-cog" aria-hidden="true"></span>
     <% end %>
   </div>
-<% end %>

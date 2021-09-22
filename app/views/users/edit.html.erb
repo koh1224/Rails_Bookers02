@@ -18,7 +18,7 @@
   <div class="row">
     <%= form_with model:@user, local:true do |f| %>
       <p>Name</p>
-      <%= f.text_field :username, size: 60 %>
+      <%= f.text_field :name, size: 60 %>
       <p>Image</p>
       <%= f.attachment_field :profile_image %>
       <p>Introduction</p>
